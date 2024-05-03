@@ -41,6 +41,10 @@ let customers = [
 ];
 
 
+app.get('/', (req, res)=> {
+  res.status(200).send("Welcome to the Server!")
+})
+
 
 // view all Rooms and its details
 app.get('/rooms/all', (req, res)=> {
